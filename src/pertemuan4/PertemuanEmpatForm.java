@@ -35,6 +35,7 @@ public class PertemuanEmpatForm extends javax.swing.JFrame {
         cbItalic = new javax.swing.JCheckBox();
         cbBig = new javax.swing.JCheckBox();
         jText = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
@@ -69,6 +70,10 @@ public class PertemuanEmpatForm extends javax.swing.JFrame {
         jText.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
         jText.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jText.setText("Text ini nanti akan diubah");
+
+        jLabel1.setFont(new java.awt.Font("DejaVu Sans", 0, 10)); // NOI18N
+        jLabel1.setForeground(javax.swing.UIManager.getDefaults().getColor("Button.shadow"));
+        jLabel1.setText("made by IMAN MULIAWAN - 1641808");
 
         jMenu1.setText("File");
 
@@ -106,8 +111,13 @@ public class PertemuanEmpatForm extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(24, Short.MAX_VALUE)
-                .addComponent(jText, javax.swing.GroupLayout.PREFERRED_SIZE, 355, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(21, 21, 21))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(jText, javax.swing.GroupLayout.PREFERRED_SIZE, 355, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(21, 21, 21))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(jLabel1)
+                        .addContainerGap())))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -122,7 +132,9 @@ public class PertemuanEmpatForm extends javax.swing.JFrame {
                 .addComponent(cbItalic)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(cbBig)
-                .addContainerGap(39, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addComponent(jLabel1)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
@@ -158,31 +170,16 @@ public class PertemuanEmpatForm extends javax.swing.JFrame {
     private void cbBoldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbBoldActionPerformed
         // TODO add your handling code here:
         getTampil();
-        //if(cbBold.isSelected()) {
-        //    jText.setFont(new Font("", Font.BOLD, 18));
-        //} else {
-        //    jText.setFont(new Font("", Font.PLAIN, 18));
-        //}
     }//GEN-LAST:event_cbBoldActionPerformed
 
     private void cbItalicActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbItalicActionPerformed
         // TODO add your handling code here:
         getTampil();
-        //if(cbItalic.isSelected()) {
-        //    jText.setFont(new Font("",Font.ITALIC,18));
-        //} else {
-        //    jText.setFont(new Font("",Font.PLAIN,18));
-        //}
     }//GEN-LAST:event_cbItalicActionPerformed
 
     private void cbBigActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbBigActionPerformed
         // TODO add your handling code here:
         getTampil();
-        //if(cbBig.isSelected()) {
-        //    jText.setFont(new Font("",Font.PLAIN,22));
-        //} else {
-        //    jText.setFont(new Font("",Font.PLAIN,18));
-        //}
     }//GEN-LAST:event_cbBigActionPerformed
 
     private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
@@ -229,6 +226,7 @@ public class PertemuanEmpatForm extends javax.swing.JFrame {
     private javax.swing.JCheckBox cbBig;
     private javax.swing.JCheckBox cbBold;
     private javax.swing.JCheckBox cbItalic;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenuBar jMenuBar1;
